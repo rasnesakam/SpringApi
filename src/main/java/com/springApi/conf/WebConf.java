@@ -1,4 +1,4 @@
-package com.springApiDemo.conf;
+package com.springApi.conf;
 
 import org.springframework.context.annotation.Configuration;
 
