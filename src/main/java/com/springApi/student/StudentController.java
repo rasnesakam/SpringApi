@@ -27,7 +27,7 @@ public class StudentController {
         service.addNew(student);
     }
 
-    @PutMapping(path = "{StudentId}")
+    @PutMapping(path = "{studentId}")
     public void update(@PathVariable("studentId") String studentId,@RequestBody Student student){
             UUID id;
             try {

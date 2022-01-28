@@ -3,6 +3,7 @@ package com.springApi.student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -30,8 +31,21 @@ public class StudentService {
 
     }
 
+    @Transactional
     public void update(UUID id, Student student){
-
+        Optional<Student> optionalStudent = repository.findById(id);
+        optionalStudent.ifPresentOrElse(
+                previous ->{
+                    previous.setFirstName(student.getFirstName());
+                    previous.setLastName(student.getLastName());
+                    previous.setBranch(student.getBranch());
+                    previous.setMail(student.getMail());
+                    repository.save(previous);
+                },
+                () ->{
+                    throw new IllegalArgumentException("There is no such student");
+                }
+        );
     }
     public void delete(UUID studentId){
         Optional<Student> optionalStudent = repository.findById(studentId);
