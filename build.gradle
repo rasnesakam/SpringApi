@@ -15,7 +15,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 dependencies {
 
-    implementation 'org.springframework.boot:spring-boot-starter:2.6.2' // Spring boot starter
+    implementation 'org.springframework.boot:spring-boot-starter:2.6.3' // Spring boot starter
     implementation 'org.springframework.boot:spring-boot-starter-web:2.6.3' // Spring Web Support for Http requests
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.6.3' // Spring Data JPA Support
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb:2.6.3' // Spring Data Mongodb support
