@@ -4,6 +4,17 @@ It handles basic 'CURL' operations for ***User*** and ***Student*** datas by Htt
 - Student datas stored in PostgreSQL
 - User datas stored in Mongo DB
 
+## Techstack
+
+### Student Interactions
+* Postgresql
+* Spring data JPA
+* Spring
+
+### User Interactions
+* Mongodb
+* Spring
+
 ## Requests
 
 ### GET

@@ -20,7 +20,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.6.3' // Spring Data JPA Support
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb:2.6.3' // Spring Data Mongodb support
     implementation 'org.postgresql:postgresql:42.3.1' // PostgreSQL Support
-    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.3'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.3' // Spring boot starter test
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 }
